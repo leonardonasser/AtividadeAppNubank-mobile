@@ -108,22 +108,72 @@ export default function App() {
         <ScrollView horizontal={true} >
           <Card style={styles.cardHorizontal}>
             <Card.Content>
-              <Title style={{ color: '#652279' }}></Title>
+              <Title style={{ color: '#fff', fontSize: 12, marginTop: 43, marginLeft: -10 }}>Pix</Title>
             </Card.Content>
           </Card>
           <Card style={styles.cardHorizontal}>
             <Card.Content>
-              <Title style={{ color: '#652279' }}></Title>
+            <Title style={{ color: '#fff', fontSize: 12, marginTop: 43, marginLeft: -10 }}>Pagar</Title>
             </Card.Content>
           </Card>
           <Card style={styles.cardHorizontal}>
             <Card.Content>
-              <Title style={{ color: '#652279' }}></Title>
+            <Title style={{ color: '#fff', fontSize: 12, marginTop: 27, marginLeft: -7 }}>Indicar</Title>  
+             <Title style={{ color: '#fff', fontSize: 12, marginTop: -15, marginLeft: -7 }}>amigos</Title>
             </Card.Content>
           </Card>
           <Card style={styles.cardHorizontal}>
             <Card.Content>
-              <Title style={{ color: '#652279' }}></Title>
+            <Title style={{ color: '#fff', fontSize: 12, marginTop: 43, marginLeft: -10 }}>Transferir</Title>
+            </Card.Content>
+          </Card>
+          <Card style={styles.cardHorizontal}>
+            <Card.Content>
+            <Title style={{ color: '#fff', fontSize: 12, marginTop: 43, marginLeft: -10 }}>Depositar</Title>
+            </Card.Content>
+          </Card>
+          <Card style={styles.cardHorizontal}>
+            <Card.Content>
+            <Title style={{ color: '#fff', fontSize: 11, marginTop: 43, marginLeft: -10 }}>Empréstimos</Title>
+            </Card.Content>
+          </Card>
+          <Card style={styles.cardHorizontal}>
+            <Card.Content>
+            <Title style={{ color: '#fff', fontSize: 12, marginTop: 27, marginLeft: -7 }}>Cartão</Title>  
+             <Title style={{ color: '#fff', fontSize: 12, marginTop: -15, marginLeft: -7 }}>virtual</Title>
+            </Card.Content>
+          </Card>
+          <Card style={styles.cardHorizontal}>
+            <Card.Content>
+            <Title style={{ color: '#fff', fontSize: 12, marginTop: 27, marginLeft: -7 }}>Recarga de</Title>  
+             <Title style={{ color: '#fff', fontSize: 12, marginTop: -15, marginLeft: -7 }}>celular</Title>
+            </Card.Content>
+          </Card>
+          <Card style={styles.cardHorizontal}>
+            <Card.Content>
+            <Title style={{ color: '#fff', fontSize: 12, marginTop: 27, marginLeft: -7 }}>Ajustar</Title>  
+             <Title style={{ color: '#fff', fontSize: 12, marginTop: -15, marginLeft: -7 }}>limite</Title>
+            </Card.Content>
+          </Card>
+          <Card style={styles.cardHorizontal}>
+            <Card.Content>
+            <Title style={{ color: '#fff', fontSize: 12, marginTop: 27, marginLeft: -7 }}>Bloquear</Title>  
+             <Title style={{ color: '#fff', fontSize: 12, marginTop: -15, marginLeft: -7 }}>cartão</Title>
+            </Card.Content>
+          </Card>
+          <Card style={styles.cardHorizontal}>
+            <Card.Content>
+            <Title style={{ color: '#fff', fontSize: 11, marginTop: 43, marginLeft: -10 }}>Cobrar</Title>
+            </Card.Content>
+          </Card>
+          <Card style={styles.cardHorizontal}>
+            <Card.Content>
+            <Title style={{ color: '#fff', fontSize: 11, marginTop: 43, marginLeft: -10 }}>Doação</Title>
+            </Card.Content>
+          </Card>
+          <Card style={styles.cardHorizontal}>
+            <Card.Content>
+            <Title style={{ color: '#fff', fontSize: 11, marginTop: 43, marginLeft: -10 }}>Me ajuda</Title>
             </Card.Content>
           </Card>
         </ScrollView>
@@ -152,8 +202,8 @@ const styles = StyleSheet.create({
 
   },
   boxBaixo: {
-    flex: 1,
-    height: 30,
+    flex: 1.5,
+    height: 50,
     backgroundColor: '#9300d3',
 
   },
@@ -165,9 +215,9 @@ const styles = StyleSheet.create({
   },
   cardHorizontal: {
     marginTop: 20,
-    width: 100,
-    height: 100,
+    width: 90,
+    height: 90,
     marginHorizontal: 5,
-    backgroundColor: '#a029d4'
+    backgroundColor: '#9041a9'
   },
 });

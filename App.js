@@ -3,26 +3,27 @@ import React from 'react';
 import { StyleSheet, Text, View, SafeAreaView, ScrollView, FlatList } from 'react-native';
 import { Avatar, Button, Card, Title, Paragraph } from 'react-native-paper';
 
-import { Icon } from 'react-native-vector-icons/MaterialIcons';
+import  IconAwe  from 'react-native-vector-icons/FontAwesome';
+import  IconEvi  from 'react-native-vector-icons/EvilIcons';
+import  IconIon  from 'react-native-vector-icons/Ionicons';
 
 export default function App() {
 
 
   return (
 
-
-
     <SafeAreaView style={styles.container}>
+      <View style={styles.boxEncima}>
+        <Text style={{ fontSize: 20, fontWeight: "bold", paddingLeft: 20, color: '#fff', paddingTop: 60 }} >Olá, Leonardo</Text>
+       
+       <View style={{marginLeft: 230, marginTop: -28, flexDirection: 'row'}}>
+        <IconIon name="md-eye-off-outline" size={30} style={{color: '#fff', marginHorizontal: 20}}/>
+    
+        <IconEvi name="gear"  size={30} style={{ color: '#fff'}}/>
+        </View>
+      </View>
 
-
-
-
-
-      <Text style={{ fontSize: 20, fontWeight: "bold", paddingLeft: 20, color: '#fff', paddingTop: 10 }} >Olá, Leonardo</Text>
-
-
-
-      <View Style={styles.scrollMeio}>
+      <View style={styles.boxMeio}>
         <ScrollView style={styles.scrollView}>
           <Card style={styles.card}>
             <Card.Content>
@@ -101,9 +102,9 @@ export default function App() {
             </Card.Content>
           </Card>
         </ScrollView>
-      </View>
 
-      <View style={styles.fix}>
+      </View>
+      <View style={styles.boxBaixo}>
         <ScrollView horizontal={true} >
           <Card style={styles.cardHorizontal}>
             <Card.Content>
@@ -126,9 +127,8 @@ export default function App() {
             </Card.Content>
           </Card>
         </ScrollView>
+
       </View>
-
-
 
     </SafeAreaView>
   );
@@ -139,45 +139,35 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#9300d3',
   },
-  scrollMeio: {
+  boxEncima: {
     flex: 1,
-    minHeight: 50,
-  },
-  scrollView: {
-    marginHorizontal: 20,
-  },
-  fixEncima: {
-    position: 'fixed',
-    marginHorizontal: 10,
-    paddingVertical: 10,
+    height: 10,
     backgroundColor: '#9300d3',
+ 
+  },
+  boxMeio: {
+    flex: 5,
+    height: 100,
+    backgroundColor: '#9300d3',
+
+  },
+  boxBaixo: {
     flex: 1,
-  },
-  encima: {
-    flexDirection: 'row',
-    paddingVertical: 30,
-    flexBasis: 1,
-  },
-  baixo: {
-    flexDirection: 'row',
-    paddingVertical: 30,
-    flexBasis: 1,
+    height: 30,
+    backgroundColor: '#9300d3',
+
   },
   card: {
     marginTop: 20
+  },
+  scrollView: {
+    marginHorizontal: 20,
   },
   cardHorizontal: {
     marginTop: 20,
     width: 100,
     height: 100,
-    marginHorizontal: 10,
-    backgroundColor: '#652279'
-  },
-  fix: {
-    position: 'fixed',
-    marginHorizontal: 10,
-    paddingVertical: 10,
-    bottom: 0,
-    backgroundColor: '#9300d3'
+    marginHorizontal: 5,
+    backgroundColor: '#a029d4'
   },
 });
